@@ -1,10 +1,8 @@
-def calculator(a, b):
-    print(f"{a} + {b} =", a + b)
-    print(f"{a} - {b} =", a - b)
-    print(f"{a} * {b} =", a * b)
-    print(f"{a} / {b} =", a / b)
+def hello():
+    print("Hello!")
 
-a = int(input("add number: "))
-b = int(input("add number: "))
-calculator(a, b)
-print("계산이 완료되었습니다.")
+def repeat_hello():
+    for i in range(3):
+        hello()
+
+repeat_hello()
